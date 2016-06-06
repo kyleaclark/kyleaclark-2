@@ -1,0 +1,23 @@
+@import "~style/base/_variables";
+@import "~style/base/_mixins";
+
+.info__elements--blurb {
+  background-color: $colorBlockLight;
+  border: 3px solid rgba($blue, 1);
+  width: 100%;
+
+  /* Desktop Media Query */
+  @include apply-to(min-width, $bodySizeDesktop) {
+    width: 98%;
+  }
+
+  div {
+    padding: 3px;
+  }
+
+  h3 {
+    color: $colorTextWhite;
+    margin: 0;
+    padding: 0;
+  }
+}

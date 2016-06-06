@@ -1,0 +1,13 @@
+<div *ngFor="let item of list; #i = index">
+
+  <section class="container">
+    <div class="info__list--item">
+      <div class="info__list--item-container">
+
+        <info-item [item]="item"></info-item>
+
+      </div>
+    </div>
+  </section>
+
+</div>

@@ -1,7 +1,6 @@
 # Logs
 logs
 *.log
-npm-debug.log*
 
 # Runtime data
 pids
@@ -12,22 +11,58 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
+# Reports directory used by tools like protractor
+reports/
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+# Build
+build/
+dist/
+.tmp
+.cache/
+
+# Vendor files
+node_modules
+bower_components
+vendor
+
+# Temp directories
+temp/
+test/tmp
+test/temp
+
+# Other temp
+.sass-cache
 .grunt
 
-# node-waf configuration
-.lock-wscript
+# Shippable directory
+shippable/
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Dependency directory
-node_modules
+# Cordova
+platforms/
+plugins/
 
-# Optional npm cache directory
-.npm
+# Visual Studio Code
+.vscode/
 
-# Optional REPL history
-.node_repl_history
+# Visual Studio
+*.csproj.user
+obj/
+*.suo
+*.csproj.user
+*.DotSettings.user
+
+# Fuse
+.build/
+
+# Changelog
+CHANGELOG.md

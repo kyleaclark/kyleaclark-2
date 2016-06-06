@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "jsx": "react",
+        "noEmitHelpers": true,
+        "baseUrl": ".",
+        "paths": { "*": [ "*", "src/*", "src/app/*", "src/app/components/*" ] }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false
+}

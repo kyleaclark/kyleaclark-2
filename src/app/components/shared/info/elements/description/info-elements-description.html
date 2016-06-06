@@ -1,0 +1,9 @@
+<section class="info__elements--description">
+  <div>
+    <h3>The Deets</h3>
+    <ul>
+      <li><span>Created: {{ content.created }}</span> &ndash; <span>Updated: {{ content.updated }}</span></li>
+      <li *ngFor="let description of content.descriptions"><span>{{ description.content }}</span></li>
+    </ul>
+  </div>
+</section>
