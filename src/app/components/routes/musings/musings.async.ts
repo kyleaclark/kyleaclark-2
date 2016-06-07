@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import { InfoList } from 'components/shared/info/list/info-list';
-import MusingsList from 'services/data-store/MusingsList';
+import { InfoList } from 'components/common/info/list/info-list';
+import MusingBlocks from 'services/data-store/MusingBlocks';
 
 @Component({
   selector: 'musings',
@@ -12,7 +12,7 @@ import MusingsList from 'services/data-store/MusingsList';
 
 export class Musings implements OnInit {
 
-  musingsList = MusingsList;
+  musingBlocks = MusingBlocks;
 
   constructor() {
     // Do stuff

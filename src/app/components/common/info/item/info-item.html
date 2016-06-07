@@ -1,0 +1,41 @@
+<div class="info__item">
+  <div class="info__item-container">
+
+    <header>
+
+      <blocks-content-title
+        *ngIf="item.contentTitle"
+        [contentTitle]="item.contentTitle"
+      >
+    </blocks-content-title>
+
+      <!-- <blocks-sub-title
+        *ngIf="metaData.subTitle"
+        [content]="item.subTitle"
+        [metaData]="metaData.subTitle"
+      >
+      </blocks-sub-title> -->
+
+    </header>
+
+    <blocks-content-text
+      *ngIf="item.contentText"
+      [contentText]="item.contentText"
+    >
+    </blocks-content-text>
+
+    <blocks-content-list
+      *ngIf="item.contentList"
+      [contentList]="item.contentList"
+    >
+    </blocks-content-list>
+
+    <!-- <blocks-content-list-links
+      *ngIf="metaData.contentListLinks"
+      [content]="item.description"
+      [metaData]="metaData.contentText"
+    >
+    </blocks-content-list-links> -->
+
+  </div>
+</div>

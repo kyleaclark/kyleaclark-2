@@ -1,11 +1,11 @@
 @import "~style/base/_variables";
 @import "~style/base/_mixins";
 
-.info__elements--title {
+.blocks__content-title {
   position: relative;
 }
 
-.info__elements--title-content {
+.blocks__content-title--content {
   background-color: $colorSnazzyDark;
   border: 2px solid $colorBorder;
   height: 47px;
@@ -22,7 +22,7 @@
   }
 }
 
-.info__elements--title-arrow {
+.blocks__content-title--arrow {
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
   border-top: 18px solid $colorSnazzyDark;
@@ -34,7 +34,7 @@
   z-index: 10;
 }
 
-.info__elements--title-arrow-outline {
+.blocks__content-title--arrow-outline {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid $colorBorder;

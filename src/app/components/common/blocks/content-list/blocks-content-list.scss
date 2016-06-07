@@ -1,24 +1,15 @@
 @import "~style/base/_variables";
 @import "~style/base/_mixins";
 
-.info__elements--footnote {
+.blocks__content-list {
   float: left;
-  margin-bottom: 25px;
   margin-top: 10px;
   width: 100%;
 
   /* Desktop Media Query */
   @include apply-to(min-width, $bodySizeDesktop) {
-    width: 98%;
-  }
-
-  p {
-    display: inline-block;
-    font-size: $fontSizeSmall;
-    margin: 0;
-    padding: 0;
-    margin-right: .25em;
-    white-space: nowrap;
+    margin-right: 2%;
+    width: 70%;
   }
 
   div {

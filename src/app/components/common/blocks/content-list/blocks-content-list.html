@@ -1,0 +1,14 @@
+<section
+  *ngFor="let block of contentList; #i = index"
+  class="blocks__content-list"
+>
+
+  <div>
+    <h3>{{ block.title }}</h3>
+
+    <ul>
+      <li *ngFor="let content of block.data">{{ content }}</li>
+    </ul>
+  </div>
+
+</section>

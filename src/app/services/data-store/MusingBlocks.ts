@@ -1,4 +1,4 @@
-const MusingsList = [{
+const MusingBlocks = [{
     selector: "musings_angular_loading",
     title: "Angular Loading",
     blurb: "Improving the Angular Single-Page Application Loading Experience",
@@ -82,4 +82,4 @@ const MusingsList = [{
   }
 ];
 
-export default MusingsList;
+export default MusingBlocks;

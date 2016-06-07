@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import { InfoList } from 'components/shared/info/list/info-list';
-import ProjectsList from 'services/data-store/ProjectsList';
+import { InfoList } from 'components/common/info/list/info-list';
+import PersonalBlocks from 'services/data-store/PersonalBlocks';
 
 @Component({
   selector: 'home',
@@ -12,7 +12,7 @@ import ProjectsList from 'services/data-store/ProjectsList';
 
 export class Home implements OnInit {
 
-  projectsList = ProjectsList;
+  personalBlocks = PersonalBlocks;
 
   constructor() {
     // Do stuff

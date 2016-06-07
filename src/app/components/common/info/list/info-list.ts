@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { InfoItem } from "components/shared/info/item/info-item";
+import { InfoItem } from "components/common/info/item/info-item";
 
 @Component({
   selector: 'info-list',
