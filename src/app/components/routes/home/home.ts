@@ -1,10 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import { InfoList } from 'components/common/info/list/info-list';
-import PersonalBlocks from 'services/data-store/PersonalBlocks';
+import { ProjectsList } from 'components/common/projects/list/projects-list';
+import PersonalDetails from 'services/data-store/personal-details';
+import Projects from 'services/data-store/projects';
+import Musings from 'services/data-store/musings';
 
 @Component({
   selector: 'home',
-  directives: [InfoList],
+  directives: [
+    ProjectsList
+  ],
   pipes: [],
   styles: [require('./home.scss')],
   template: require('./home.html')
@@ -12,7 +16,9 @@ import PersonalBlocks from 'services/data-store/PersonalBlocks';
 
 export class Home implements OnInit {
 
-  personalBlocks = PersonalBlocks;
+  personalDetails = PersonalDetails;
+  projects = Projects;
+  musings = Musings;
 
   constructor() {
     // Do stuff

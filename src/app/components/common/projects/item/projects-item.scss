@@ -1,0 +1,18 @@
+@import "~style/base/_variables";
+@import "~style/base/_mixins";
+
+.projects__item {
+  color: #000;
+  margin: 0 auto;
+  width: 98%;
+
+  /* Desktop Media Query */
+  @include apply-to(min-width, $bodySizeDesktop) {
+    width: $bodySizeDesktop;
+  }
+}
+
+.projects__item-main {
+  border: 1px solid #ccc;
+  padding: 20px;
+}

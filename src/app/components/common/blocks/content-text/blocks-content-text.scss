@@ -9,7 +9,7 @@
   /* Desktop Media Query */
   @include apply-to(min-width, $bodySizeDesktop) {
     margin-right: 2%;
-    width: 70%;
+    width: 98%;
   }
 
   div {
@@ -21,10 +21,5 @@
 
   h3 {
     margin: 3px 0 1px;
-  }
-
-  ul {
-    margin: 0 0 0 20px;
-    padding: 0;
   }
 }

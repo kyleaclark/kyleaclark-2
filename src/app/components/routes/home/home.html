@@ -1,32 +1,31 @@
-<main user-scroll ng-show="ngRepeatFinished">
+<main>
 
-  <!-- <section
-    class="container portfolio"
-    ng-class="{'portfolio-container-first' : $first, 'portfolio-container-odd' : $odd}"
-    ng-repeat="slide in slides"
-    data-slide="{{ slide.slide }}"
-    user-scroll-update-nav
-    on-last-repeat
-  > -->
+  <h1>KYLE CLARK</h1>
+  <h4>Software Engineer</h4>
+  <p><em>Sports Afficianado & Data Science Enthusiast</em></p>
+  <button>Learn More</button>
 
-  <info-list [list]="personalBlocks"></info-list>
+  <h2>ABOUT</h2>
+  <p>My dream job is to be involved in the basketball decision-making process
+  for the Phoenix Suns. My slightly-more-attainable goal is to work anywhere
+  in the sports analytics domain or within the machine learning technology space.</p>
+  <button>Download my CV</button>
 
-  <!-- <div class="content-container">
+  <projects-list [projects]="projects"></projects-list>
 
-    <div class="nav-slider-container">
+  <h2>MUSINGS</h2>
 
-      <nav class="nav-slider">
+  <p>
+  [ Headline
+    description
+    <sm>dates</sm>
+    LINK ICONS ]
+  </p>
 
-        <div class="nav-slider-content">
-
-          <div partial-include="/scripts/routes/portfolio/partials/side-nav.html" />
-
-        </div>
-
-      </nav>
-
-    </div>
-
-  </div> -->
+  <h2>GET IN TOUCH</h2>
+  <p>
+  github | twitter | linkedin
+  ballcruncher | ballcruncher blog
+  </p>
 
 </main>

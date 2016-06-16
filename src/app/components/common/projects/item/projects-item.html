@@ -1,0 +1,52 @@
+<div class="projects__item">
+  <div class="projects__item-container">
+
+    <header>
+
+      <h3>{{ project.headline }}</h3>
+
+    </header>
+
+    <main class="projects__item-main">
+
+      <div class="projects__item--techs">
+
+        <div *ngFor="let tech of project.techs"
+             class="projects__item--tech-icon">
+
+          <span>{{ tech }}</span>
+
+        </div>
+
+      </div>
+
+      <div class="projects_item--body">
+
+        <div class="projects__item--description">
+          <p>{{ project.description }}</p>
+        </div>
+
+        <div class="projects__item--timeline">
+          <p>{{ project.timeline }}</p>
+        </div>
+
+      </div>
+
+      <div class="projects__item--references">
+
+        <span *ngIf="project.github"
+              class="projects__item--references-link">
+          github
+        </span>
+
+        <span *ngIf="project.website"
+              class="projects__item--references-link">
+          website
+        </span>
+
+      </div>
+
+    </main>
+
+  </div>
+</div>

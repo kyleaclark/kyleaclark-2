@@ -1,0 +1,15 @@
+@import "~style/base/_variables";
+@import "~style/base/_mixins";
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+.projects__list {
+  margin: 10px 0;
+}
+
+.projects__list--item {
+  margin: 20px 0;
+}
