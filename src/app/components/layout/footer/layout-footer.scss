@@ -1,0 +1,12 @@
+@import "~style/base/_variables";
+@import "~style/base/_mixins";
+
+.footer {
+  background-color: $colorSkinPrimary;
+}
+
+.footer-content {
+  color: $colorSnazzy;
+  font-size: $fontSizeTiny;
+  font-weight: 600;
+}

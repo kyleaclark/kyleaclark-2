@@ -31,14 +31,6 @@
   }
 }
 
-.header, .footer {
-  background-color: $colorSkinPrimary;
-}
-
-.header {
-  z-index: 1000;
-}
-
 .about, .background, .experience, .skills, .education, .contact, .projects, .gists, .slides {
   border-bottom: 1px solid rgba($colorTextLight, 0.4);
   z-index: 100;
