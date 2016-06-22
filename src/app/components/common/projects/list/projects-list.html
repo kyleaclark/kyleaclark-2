@@ -1,6 +1,6 @@
 <section class="container projects__list">
 
-  <div *ngFor="let project of projects; #i = index"
+  <div *ngFor="let project of projects; let i = index"
        class="projects__list--item">
 
     <projects-item [project]="project"></projects-item>

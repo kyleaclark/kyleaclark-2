@@ -16,3 +16,15 @@
   border: 1px solid #ccc;
   padding: 20px;
 }
+
+.projects__item--techs {
+  float: left;
+  width: 20%;
+}
+
+.projects__item--tech-icon {
+  color: $colorSnazzyDark;
+  display: inline-block;
+  font-size: $fontSizeDouble;
+  padding: 5px;
+}

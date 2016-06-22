@@ -138,6 +138,7 @@ module.exports = (function makeWebpackConfig() {
 
             // copy those assets to output
             {test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/, loader: 'file?name=[path][name].[ext]?[hash]'},
+            {test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/, loader: 'url'},
 
             // Support for *.json files.
             {test: /\.json$/, loader: 'json'},

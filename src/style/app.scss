@@ -1,6 +1,7 @@
 /* --- [ Library ] --- */
 
 @import "lib/normalize";
+@import "lib/devicon";
 
 /* --- [ Base ] --- */
 
@@ -13,27 +14,13 @@
 
 /* --- [ Components ] --- */
 
-@import "components/navAccordion";
-@import "components/navSlider";
-@import "components/slideTitleContainer";
-@import "components/slides";
+// @import "components/navAccordion";
+// @import "components/navSlider";
+// @import "components/slideTitleContainer";
+// @import "components/slides";
 
 /* --- [ Partials ] --- */
 
 /* Shared */
 @import "partials/header";
 @import "partials/footer";
-
-/* Home */
-@import "partials/home/about";
-@import "partials/home/background";
-@import "partials/home/experience";
-@import "partials/home/skills";
-@import "partials/home/education";
-@import "partials/home/contact";
-
-/* Projects */
-@import "partials/projects/projects";
-
-/* Gists */
-@import "partials/gists/gists";
