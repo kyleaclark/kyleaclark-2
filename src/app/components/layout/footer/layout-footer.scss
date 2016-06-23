@@ -1,12 +1,26 @@
-@import "~style/base/_variables";
-@import "~style/base/_mixins";
+@import "~style/common/_variables";
+@import "~style/common/_mixins";
 
-.footer {
-  background-color: $colorSkinPrimary;
+.layout__footer {
+  background-color: $colorBorderDark;
 }
 
-.footer-content {
-  color: $colorSnazzy;
+.layout__footer-content {
   font-size: $fontSizeTiny;
-  font-weight: 600;
+  padding: 10px 0;
+}
+
+.layout__footer-title {
+  color: $colorSnazzy;
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+.layout__footer-subtitle {
+  color: $colorTextLight;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 2px;
+  text-transform: lowercase;
 }

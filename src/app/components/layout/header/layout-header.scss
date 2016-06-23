@@ -1,8 +1,8 @@
-@import "~style/base/_variables";
-@import "~style/base/_mixins";
+@import "~style/common/_variables";
+@import "~style/common/_mixins";
 
 .layout__header {
-  background-color: $colorSkinPrimary;
+  background-color: $colorBorderDark;
   z-index: 1000;
 }
 
@@ -44,7 +44,7 @@
 
   /* Tablet Media Query */
   @include apply-to(min-width, $bodySizeTablet) {
-    font-size: $fontSizeLarge;
+    font-size: $fontSizeMedium
   }
 
   // span {
@@ -62,7 +62,7 @@
   color: $colorTextLight;
   display: inline-block;
   font-size: $fontSizeTiny;
-  padding: 0;
+  padding-left: 2px;
   margin-top: -6px;
   font-style: italic;
   text-transform: lowercase;

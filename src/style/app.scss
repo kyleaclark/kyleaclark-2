@@ -3,10 +3,12 @@
 @import "lib/normalize";
 @import "lib/devicon";
 
-/* --- [ Base ] --- */
+/* --- [ Common ] --- */
 
-@import "base/_variables";
-@import "base/_mixins";
+@import "common/_variables";
+@import "common/_mixins";
+
+/* --- [ Base ] --- */
 
 @import "base/typography";
 @import "base/helpers";
