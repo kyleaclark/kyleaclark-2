@@ -2,7 +2,8 @@
 @import "~style/common/_mixins";
 
 .layout__header {
-  background-color: $colorBorderDark;
+  background-color: $white;
+  border-bottom: 1px solid $grayFirmDarkest;
   z-index: 1000;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .layout__header-subtitle {
-  color: $colorTextLight;
+  color: $grayFirmLight;
   display: inline-block;
   font-size: $fontSizeTiny;
   padding-left: 2px;
@@ -80,11 +81,12 @@
   }
 
   a {
-    color: $colorSkinWhite;
+    color: $colorLink;
+    cursor: pointer;
   }
 
   a:hover {
-    color: $colorTextLight;
+    color: $colorLinkHover;
   }
 }
 

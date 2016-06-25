@@ -1,0 +1,14 @@
+@import "~style/common/_variables";
+@import "~style/common/_mixins";
+
+.about__content {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about__title {
+  margin: 0 0 20px;
+  text-decoration: underline;
+}
+
+.about__paragraph {}
