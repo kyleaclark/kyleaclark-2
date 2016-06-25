@@ -15,7 +15,7 @@
 
   /* Tablet Media Query */
   @include apply-to(min-width, $bodySizeTablet) {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 }
 

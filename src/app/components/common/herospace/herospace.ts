@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'layout-header',
+  selector: 'herospace',
   directives: [],
   pipes: [],
-  styles: [require('./layout-header.scss')],
-  template: require('./layout-header.html')
+  styles: [require('./herospace.scss')],
+  template: require('./herospace.html')
 })
 
-export class LayoutHeader {}
+export class Herospace {}
