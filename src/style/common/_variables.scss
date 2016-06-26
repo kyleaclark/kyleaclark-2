@@ -6,20 +6,12 @@ $white: #f9f9f9;
 $whiteDark: darken($white, 8%);
 $whiteLight: lighten($white, 8%);
 
-$blue: #3aaba5;
-$blueDark: darken($blue, 12%);
-$blueDarkest: darken($blue, 32%);
-$blueLight: lighten($blue, 4%);
-$blueLightest: lighten($blue, 30%);
-$blueMedLight: lighten($blue, 2%);
-
-$green: #0A5741;
-$greenDark: #142428;
-$greenLight: #2e3e42;
-$greenLightest: #8b9496;
-$greenMedLight: #737e81;
-
-$greenBlueAlt: #38646e;
+$green: #3aaba5;
+$greenDark: darken($green, 12%);
+$greenDarkest: darken($green, 32%);
+$greenLight: lighten($green, 4%);
+$greenLightest: lighten($green, 30%);
+$greenMedLight: lighten($green, 2%);
 
 $graySoft: #e9e9e9;
 $grayMed: #bdbebd;
@@ -28,8 +20,8 @@ $grayFirm: #262723;
 $grayFirmDarkest: #161715;
 $grayFirmLight: #3b3c38;
 
-$gold: #ab3a40;
-$goldDark: darken($gold, 5%);
+$red: #ab3a40;
+$redDark: darken($red, 5%);
 
 /*=============================
   THEME COLORS
@@ -38,31 +30,36 @@ $goldDark: darken($gold, 5%);
 /* Base color sets for containers */
 
 $colorSkinPrimary: $white;
-$colorSkinSecondary: $grayFirmDarkest;
+$colorSkinAlt: $grayFirmLight;
 
 /* Base color sets for content */
 
+$colorWhite: $white;
+
+$colorBrand: $green;
+$colorBrandDark: $greenDark;
+
+$colorAlt: $red;
+
 $colorText: $grayFirmDarkest;
-$colorTextLight: $grayMed;
+$colorTextLight: $grayMedLight;
+
 $colorTextTitle: $green;
 $colorTextSubTitle: $grayFirmLight;
 $colorTextWhite: $whiteDark;
 
-$colorLink: $gold;
+$colorLink: $red;
 $colorLinkHover: $grayFirmLight;
 $colorLinkHoverLight: $grayMedLight;
 $colorLinkWhite: $white;
 $colorLinkWhiteHover: $whiteDark;
-
-$colorSnazzy: $gold;
-$colorSnazzyDark: $goldDark;
 
 $colorBorder: $grayFirm;
 $colorBorderDark: $grayFirmDarkest;
 $colorBorderLight: $grayFirmLight;
 
 $colorBlock: $grayFirm;
-$colorBlockLight: $blueMedLight;
+$colorBlockLight: $greenMedLight;
 
 
 /*=============================

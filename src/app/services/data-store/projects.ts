@@ -1,4 +1,4 @@
-const Projects = [{
+const ProjectsData = [{
     selector: "projects_ballcruncher",
     headline: "Ballcruncher",
     subTitle: "Sports analytics website",
@@ -148,4 +148,4 @@ const Projects = [{
   }
 ];
 
-export default Projects;
+export default ProjectsData;

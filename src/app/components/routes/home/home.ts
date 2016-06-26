@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import { Herospace } from 'components/common/herospace/herospace';
 import { About } from 'components/common/about/about';
-import { ProjectsList } from 'components/common/projects/list/projects-list';
+import { Projects } from 'components/common/projects/projects';
 import PersonalDetails from 'services/data-store/personal-details';
-import Projects from 'services/data-store/projects';
 import Musings from 'services/data-store/musings';
 
 @Component({
@@ -11,7 +10,7 @@ import Musings from 'services/data-store/musings';
   directives: [
     Herospace,
     About,
-    ProjectsList
+    Projects
   ],
   pipes: [],
   styles: [require('./home.scss')],
@@ -21,7 +20,6 @@ import Musings from 'services/data-store/musings';
 export class Home implements OnInit {
 
   personalDetails = PersonalDetails;
-  projects = Projects;
   musings = Musings;
 
   constructor() {

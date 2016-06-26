@@ -34,10 +34,10 @@
 }
 
 .layout__header-title {
-  color: $colorSnazzy;
+  color: $greenDark;
   display: inline-block;
   font-size: $fontSizeDefault;
-  font-weight: 500;
+  font-weight: 400;
   margin: -6px 0 0;
   padding: 0;
   text-decoration: none;
@@ -47,16 +47,6 @@
   @include apply-to(min-width, $bodySizeTablet) {
     font-size: $fontSizeMedium
   }
-
-  // span {
-  //   display: block;
-  //   text-transform: lowercase;
-  //
-  //   /* Tablet Media Query */
-  //   @include apply-to(min-width, $bodySizeTablet) {
-  //     display: inline-block;
-  //   }
-  // }
 }
 
 .layout__header-subtitle {
