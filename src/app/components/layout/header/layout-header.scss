@@ -11,7 +11,7 @@
 
   @include apply-to(min-width, $bodySizeDesktop) {
     font-size: $fontSizeDefault;
-    padding: 15px 0 40px 0;
+    padding: 15px 0;
   }
 }
 
