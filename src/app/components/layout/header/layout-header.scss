@@ -8,58 +8,62 @@
 }
 
 .layout__header-content {
-  padding: 15px 0 40px 0;
+  font-size: $fontSizeSmall;
+  padding: 15px 0 15px 15px;
 
-	.column-one {
-    float: left;
-    width: 50%;
+  @include apply-to(min-width, $bodySizeTablet) {
+    font-size: $fontSizeDefault;
+    padding: 15px 0 40px 0;
   }
+}
 
-  .column-two {
-    display: none;
+.layout__header-overview {
+  display: inline-block;
+  vertical-align: top;
 
-    /* Tablet Media Query */
-    @include apply-to(min-width, $bodySizeTablet) {
-      display: block;
-      float: left;
-      text-align: center;
-      width: 50%;
-    }
-
-    /* Desktop Media Query */
-    @include apply-to(min-width, $bodySizeDesktop) {
-      text-align: right;
-    }
+  @include apply-to(min-width, $bodySizeTablet) {
+    width: 50%;
   }
 }
 
 .layout__header-title {
   color: $greenDark;
   display: inline-block;
-  font-size: $fontSizeDefault;
+  //font-size: $fontSizeSmall;
   font-weight: 400;
-  margin: -6px 0 0;
   padding: 0;
   text-decoration: none;
   text-transform: lowercase;
 
-  /* Tablet Media Query */
   @include apply-to(min-width, $bodySizeTablet) {
-    font-size: $fontSizeMedium
+    font-size: $fontSizeMedium;
+    margin: -6px 0 0;
   }
 }
 
 .layout__header-subtitle {
   color: $grayFirmLight;
   display: inline-block;
-  font-size: $fontSizeTiny;
+  font-size: $fontSizeSmall;
   padding-left: 2px;
-  margin-top: -6px;
   font-style: italic;
   text-transform: lowercase;
+
+  @include apply-to(min-width, $bodySizeTablet) {
+    font-size: $fontSizeMedium;
+    margin-top: -6px;
+  }
 }
 
 .layout__header-nav {
+  display: none;
+  text-align: right;
+  width: 50%;
+
+  @include apply-to(min-width, $bodySizeTablet) {
+    display: inline-block;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -67,19 +71,107 @@
 
   ul li {
     display: inline-block;
-    padding-left: 25px;
-  }
+    padding-left: 10px;
 
-  a {
-    color: $colorLink;
-    cursor: pointer;
-  }
-
-  a:hover {
-    color: $colorLinkHover;
+    @include apply-to(min-width, $bodySizeTablet) {
+      padding-left: 25px;
+    }
   }
 }
 
-.layout__header-nav-link {
-  color: red;
+.layout__header--nav-mobile {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: 1010;
+
+  @include apply-to(min-width, $bodySizeTablet) {
+    display: none;
+  }
+
+  article {
+    background-color: $grayFirmDarkest;
+    background-color: rgba($grayFirmDarkest, 0.8);
+    margin-top: 0px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    right: 20px;
+    width: 150px;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+
+    ul {
+      margin-top: 15px;
+    }
+
+    li {
+      background: none;
+      border-bottom: 1px solid rgba($colorBorderLight, 0.8);
+      list-style: none;
+      padding: 5px;
+      padding-right: 30px;
+      text-align: right;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom:  5px;
+      }
+    }
+
+    a {
+      color: $colorWhite;
+      cursor: pointer;
+      //font-size: $fontSizeSmall;
+      //font-weight: 700;
+      //line-height: $fontSizeLarge;
+    }
+
+    a:hover {
+      color: $colorTextLight;
+    }
+  }
+
+  label{
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 0px;
+    cursor: pointer;
+    text-indent: -9999px;
+  }
+}
+
+.layout__header--nav-mobile label:after,
+.layout__header--nav-mobile input:checked + label:after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 16px;
+  right: 20px;
+  bottom: 0px;
+  background: url('img/nav/nav-btn.png') no-repeat;
+}
+
+.layout__header--nav-mobile input:checked + label:after {
+  background: url('img/nav/nav-btn-active.png') no-repeat;
+  -webkit-transform:rotateX(180deg);
+  -moz-transform:rotateX(180deg);
+}
+
+.layout__header--nav-mobile input {
+  display: none;
+}
+
+.layout__header--nav-mobile input:checked ~ article {
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  height: 150px;
 }

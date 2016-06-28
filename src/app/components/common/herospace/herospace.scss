@@ -20,10 +20,14 @@
   }
 }
 
+.herospace__content--overview {
+  margin-top: 20px;
+}
+
 .herospace__title {
   color: $colorWhite;
   font-size: $fontSizeHuge;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 
   /* Tablet Media Query */
   @include apply-to(min-width, $bodySizeMobileLarge) {

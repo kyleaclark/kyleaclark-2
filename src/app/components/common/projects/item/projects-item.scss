@@ -2,33 +2,63 @@
 @import "~style/common/_mixins";
 
 .projects__item {
-  margin: 0 auto;
+  text-align: left;
+  padding: 5px;
   width: 98%;
 
-  /* Desktop Media Query */
   @include apply-to(min-width, $bodySizeDesktop) {
     width: $bodySizeDesktop;
   }
 }
 
+.projects--item-title {
+  color: $colorSubTitle;
+  margin: 0 0 5px;
+}
+
 .projects__item-main {
-  border: 1px solid $colorBorderLight;
+  border: 2px solid rgba($colorBorderLight, 0.5);
+  border-radius: 5px;
   padding: 5px;
 
-  /* Desktop Media Query */
   @include apply-to(min-width, $bodySizeDesktop) {
-    padding: 20px;
+    padding: 8px;
   }
 }
 
 .projects__item--techs {
-  float: left;
-  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  width: 14%;
 }
 
-.projects__item--tech-icon {
+.projects__item--techs-icon {
   color: $colorAlt;
   display: inline-block;
   font-size: $fontSizeHuge;
-  padding: 5px;
+  padding: 0 5px;
+
+  @include apply-to(min-width, $bodySizeDesktop) {
+    font-size: $fontSizeSuper;
+  }
+}
+
+.projects__item--overview {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.projects__item--references {
+  display: block;
+  font-size: $fontSizeTiny;
+  padding-left: 14%;
+  vertical-align: top;
+  width: 10%;
+
+  @include apply-to(min-width, $bodySizeDesktop) {
+    display: inline-block;
+    font-size: $fontSizeSmall;
+    padding-left: 0;
+  }
 }

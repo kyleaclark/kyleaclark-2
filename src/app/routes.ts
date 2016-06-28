@@ -1,6 +1,10 @@
-// src/app/routes.ts
-import {Home} from 'components/routes/home/home';     // ./components/home/home.ts
+import { provideRouter, RouterConfig } from '@angular/router';
+import { Home } from 'components/routes/home/home';
 
-export default [
-    {path: '/', component: Home, name: 'Home'}
+export const routes: RouterConfig = [
+  { path: '', component: Home }
+];
+
+export const APP_ROUTER_PROVIDERS = [
+  provideRouter(routes)
 ];

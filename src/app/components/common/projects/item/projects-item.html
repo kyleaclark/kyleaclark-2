@@ -1,48 +1,58 @@
 <div class="projects__item">
   <div class="projects__item-container">
 
-    <header>
-
-      <h3>{{ project.headline }}</h3>
-
-    </header>
+    <h3 class="projects--item-title">{{ project.headline }}</h3>
 
     <main class="projects__item-main">
 
       <div class="projects__item--techs">
 
-        <div *ngFor="let tech of project.techs"
-             class="projects__item--tech-icon">
+        <div class="projects__item--techs-content">
 
-          <i class="devicon-{{tech}}-plain"></i>
+          <div *ngFor="let tech of project.techs"
+               class="projects__item--techs-icon">
+
+            <i class="devicon-{{tech}}-plain" title="{{tech}}"></i>
+
+          </div>
 
         </div>
 
       </div>
 
-      <div class="projects_item--body">
 
-        <div class="projects__item--description">
-          <p>{{ project.description }}</p>
-        </div>
+      <div class="projects__item--overview">
 
-        <div class="projects__item--timeline">
-          <p>{{ project.timeline }}</p>
+        <div class="projects__item--overview-content">
+
+          <div class="projects__item--description">
+            {{ project.description }}
+          </div>
+
+          <div class="projects__item--timeline">
+            {{ project.timeline }}
+          </div>
+
         </div>
 
       </div>
+
 
       <div class="projects__item--references">
 
-        <span *ngIf="project.github"
-              class="projects__item--references-link">
-          github
-        </span>
+        <div class="projects__item--references-content">
 
-        <span *ngIf="project.website"
-              class="projects__item--references-link">
-          website
-        </span>
+          <span *ngIf="project.github"
+                class="projects__item--references-link">
+            <a href="{{project.github.url}}" target="_blank">{{ project.github.name }} </a>
+          </span>
+
+          <span *ngIf="project.website"
+                class="projects__item--references-link">
+            website
+          </span>
+
+        </div>
 
       </div>
 

@@ -3,7 +3,6 @@ import 'ts-helpers';
 import {enableProdMode} from '@angular/core';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 import {ELEMENT_PROBE_PROVIDERS} from '@angular/platform-browser';
-import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
 import {HTTP_PROVIDERS} from '@angular/http';
 
 const ENV_PROVIDERS = [];
@@ -18,7 +17,8 @@ if (process.env.ENV === 'prod') {
  * App Component
  * our top level component that holds all of our components
  */
-import {App} from './app/app';
+import { App } from './app/app';
+import { APP_ROUTER_PROVIDERS } from './app/routes';
 
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function main() {
     return bootstrap(App, [
         // These are dependencies of our App
         ...HTTP_PROVIDERS,
-        ...ROUTER_PROVIDERS,
+        ...APP_ROUTER_PROVIDERS,
         ...ENV_PROVIDERS
     ])
         .catch(err => console.error(err));
@@ -53,7 +53,7 @@ if (module.hot) {
     bootstrap(App, [
         ...ENV_PROVIDERS,
         ...HTTP_PROVIDERS,
-        ...ROUTER_PROVIDERS
+        ...APP_ROUTER_PROVIDERS
     ])
         .catch(err => console.error(err));
 

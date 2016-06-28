@@ -1,17 +1,33 @@
 <header class="container layout__header">
+
   <div class="content-container layout__header-content">
-    <div class="column-one">
+
+    <div class="layout__header-overview">
       <span class="layout__header-title">Kyle A. Clark</span>
       <span class="layout__header-subtitle">...sports tech guy</span>
     </div>
-    <div class="column-two">
-      <nav class="layout__header-nav">
-        <ul>
-          <li><a title="Home">About</a></li>
-          <li><a title="Portfolio">Projects</a></li>
-          <li><a title="Content">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+
+    <nav class="layout__header-nav">
+      <ul>
+        <li><a href="#about" title="Home">About</a></li>
+        <li><a href="#projects" title="Projects">Projects</a></li>
+        <li><a href="#contact" title="Get In Touch">Contact</a></li>
+      </ul>
+    </nav>
+
   </div>
 </header>
+
+<section class="layout__header--nav-mobile">
+  <div>
+    <input id="nav-btn" name="nav-accordion" type="checkbox" />
+    <label for="nav-btn">Nav</label>
+    <article>
+      <ul>
+        <li><a href="#about" title="About">About</a></li>
+        <li><a href="#projects" title="Projects">Projects</a></li>
+        <li><a href="#contact" title="Get In Touch">Content</a></li>
+      </ul>
+    </article>
+  </div>
+</section>

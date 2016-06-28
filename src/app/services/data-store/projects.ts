@@ -88,7 +88,7 @@ const ProjectsData = [{
       name: "github.com/kyleaclark/time-calculator-2"
     },
     description: "Desktop GUI application to calculate time",
-    techs: [ "cplusplus" ],
+    techs: [ "java" ],
     timeline: "Created in 2005 and last updated in 2005"
   }, {
     selector: "projects_time_calculator_1",
@@ -99,7 +99,7 @@ const ProjectsData = [{
       name: "github.com/kyleaclark/time-calculator-1"
     },
     description: "Desktop console application to calculate time",
-    tech: [ "cplusplus" ],
+    techs: [ "cplusplus" ],
     timeline: "Created in 2004 and last updated in 2005"
   }, {
     selector: "projects_light",

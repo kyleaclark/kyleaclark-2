@@ -1,6 +1,6 @@
 /// src/app/app.ts
 import {Component} from '@angular/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated'; // TODO: replace with new router
+import { ROUTER_DIRECTIVES } from '@angular/router'; // TODO: replace with new router
 import {FORM_PROVIDERS} from '@angular/common';
 
 import { LayoutHeader } from 'components/layout/header/layout-header';
@@ -8,7 +8,7 @@ import { LayoutFooter } from 'components/layout/footer/layout-footer';
 
 import '../style/app.scss';
 
-import routes from 'app/routes';
+// import routes from 'app/routes';
 
 /*
  * App Component
@@ -23,7 +23,7 @@ import routes from 'app/routes';
     template: require('./app.html')
 })
 
-@RouteConfig(routes)
+//@Routes(routes)
 
 export class App {
 }
