@@ -1,9 +1,11 @@
 <div class="projects__item">
-  <div class="projects__item-container">
 
-    <h3 class="projects--item-title">{{ project.headline }}</h3>
+  <div class="projects__item--container">
 
-    <main class="projects__item-main">
+    <h3 class="projects__item--title">{{ project.headline }}</h3>
+
+
+    <main class="projects__item--main">
 
       <div class="projects__item--techs">
 
@@ -23,34 +25,26 @@
 
       <div class="projects__item--overview">
 
-        <div class="projects__item--overview-content">
-
-          <div class="projects__item--description">
-            {{ project.description }}
-          </div>
-
-          <div class="projects__item--timeline">
-            {{ project.timeline }}
-          </div>
-
+        <div class="projects__item--description">
+          {{ project.description }}
         </div>
 
-      </div>
 
+        <div class="projects__item--references">
 
-      <div class="projects__item--references">
+          <a *ngIf="project.website"
+              class="projects__item--references-link"
+              href="{{project.website.url}}"
+              target="_blank">
+            {{ project.website.name }}
+          </a>
 
-        <div class="projects__item--references-content">
-
-          <span *ngIf="project.github"
-                class="projects__item--references-link">
-            <a href="{{project.github.url}}" target="_blank">{{ project.github.name }} </a>
-          </span>
-
-          <span *ngIf="project.website"
-                class="projects__item--references-link">
-            website
-          </span>
+          <a *ngIf="project.github"
+              class="projects__item--references-link"
+              href="{{project.github.url}}"
+              target="_blank">
+            {{ project.github.name }}
+          </a>
 
         </div>
 
@@ -58,5 +52,9 @@
 
     </main>
 
+
+    <h6 class="projects__item--timeline">{{ project.timeline }}.</h6>
+
   </div>
+
 </div>

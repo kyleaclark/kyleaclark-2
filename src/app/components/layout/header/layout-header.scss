@@ -4,14 +4,12 @@
 .layout__header {
   background-color: $white;
   border-bottom: 1px solid $grayFirmDarkest;
-  z-index: 1000;
 }
 
 .layout__header-content {
-  font-size: $fontSizeSmall;
-  padding: 15px 0 15px 15px;
+  padding: 10px;
 
-  @include apply-to(min-width, $bodySizeTablet) {
+  @include apply-to(min-width, $bodySizeDesktop) {
     font-size: $fontSizeDefault;
     padding: 15px 0 40px 0;
   }
@@ -19,26 +17,19 @@
 
 .layout__header-overview {
   display: inline-block;
-  vertical-align: top;
 
-  @include apply-to(min-width, $bodySizeTablet) {
-    width: 50%;
+  @include apply-to(min-width, $bodySizeDesktop) {
+    width: 49%;
   }
 }
 
 .layout__header-title {
   color: $greenDark;
   display: inline-block;
-  //font-size: $fontSizeSmall;
   font-weight: 400;
   padding: 0;
   text-decoration: none;
   text-transform: lowercase;
-
-  @include apply-to(min-width, $bodySizeTablet) {
-    font-size: $fontSizeMedium;
-    margin: -6px 0 0;
-  }
 }
 
 .layout__header-subtitle {
@@ -48,11 +39,6 @@
   padding-left: 2px;
   font-style: italic;
   text-transform: lowercase;
-
-  @include apply-to(min-width, $bodySizeTablet) {
-    font-size: $fontSizeMedium;
-    margin-top: -6px;
-  }
 }
 
 .layout__header-nav {
@@ -60,7 +46,7 @@
   text-align: right;
   width: 50%;
 
-  @include apply-to(min-width, $bodySizeTablet) {
+  @include apply-to(min-width, $bodySizeDesktop) {
     display: inline-block;
   }
 
@@ -71,21 +57,17 @@
 
   ul li {
     display: inline-block;
-    padding-left: 10px;
-
-    @include apply-to(min-width, $bodySizeTablet) {
-      padding-left: 25px;
-    }
+    padding-left: 25px;
   }
 }
 
 .layout__header--nav-mobile {
   position: absolute;
-  top: 35px;
+  top: 30px;
   right: 0;
   z-index: 1010;
 
-  @include apply-to(min-width, $bodySizeTablet) {
+  @include apply-to(min-width, $bodySizeDesktop) {
     display: none;
   }
 

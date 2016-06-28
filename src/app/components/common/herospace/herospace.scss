@@ -15,7 +15,7 @@
   text-align: center;
 
   /* Tablet Media Query */
-  @include apply-to(min-width, $bodySizeTablet) {
+  @include apply-to(min-width, $bodySizeDesktop) {
     padding: 40px 0 0;
   }
 }

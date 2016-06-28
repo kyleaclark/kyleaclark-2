@@ -21,12 +21,3 @@
     width: $bodySizeDesktop;
   }
 }
-
-.content {
-  padding: 40px 5px 20px 5px;
-
-  /* Desktop Media Query */
-  @include apply-to(min-width, $bodySizeDesktop) {
-    width: 80%;
-  }
-}
