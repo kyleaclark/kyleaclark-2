@@ -10,9 +10,9 @@ const ProjectsData = [{
       url: "http://ballcruncher.com",
       name: "ballcruncher.com"
     },
-    description: "Sports analytics website providing unique insights and statistics",
-    techs: [ "nodejs", "react", "mongodb" ],
-    timeline: "Created in 2015 and last updated in 2016"
+    description: "Sports analytics website built on top of Node & React leveraging a Mongo data pipeline from Python generated data insights.",
+    techs: [ "javascript", "nodejs", "react", "mongodb" ],
+    timeline: "Created in 2015 and last updated June 2016"
   }, {
     selector: "projects_nfl_power_rankings",
     headline: "NFL Power Rankings",
@@ -21,31 +21,20 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/nfl-power-rankings",
       name: "github.com/kyleaclark/nfl-power-rankings"
     },
-    description: "Calculates weekly NFL power rankings with a data model consisting of win value and advanced stats",
+    description: "Data model built in Python to calculate weekly NFL power rankings comprised by win value and other advanced team stats.",
     techs: [ "python" ],
-    timeline: "Created in 2015 and last updated in 2016"
+    timeline: "Created in 2015 and last updated January 2016"
   }, {
     selector: "projects_fantasy_football_stats",
-    headline: "fantasy football stats",
+    headline: "Fantasy Football Values",
     subTitle: "python program to calculate fantasy football player values",
     github: {
       url: "https://github.com/kyleaclark/fantasy-football-stats",
       name: "github.com/kyleaclark/fantasy-football-stats"
     },
-    description: "Calculates fantasy football player values +/- from their 2014 stats and exports CSV files for the position groups QB, RB, WR, TE",
+    description: "Data model built in Python to calculate fantasy football player values +/- from a selected season's stats, and exports data into CSV files by position groups.",
     techs: [ "python" ],
-    timeline: "Created in 2015 and last updated in 2016"
-  }, {
-    selector: "projects_kyle_a_clark",
-    headline: "kyleaclark.com",
-    subTitle: "Personal portfolio created in Angular",
-    github: {
-      url: "https://github.com/kyleaclark/kyleaclark",
-      name: "github.com/kyleaclark/kyleaclark"
-    },
-    description: "Single page application using Angular and Responsively designed for all device sizes",
-    techs: [ "angularjs", "sass", "grunt" ],
-    timeline: "Created in 2014 and last updated in 2015"
+    timeline: "Created in 2015 and last updated April 2016"
   }, {
     selector: "projects_game_of_life",
     headline: "Game of Life",
@@ -54,9 +43,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/game-of-life",
       name: "github.com/kyleaclark/game-of-life"
     },
-    description: "Observe the evolutionary state of Conway's Game of Life",
-    techs: [ "angularjs", "sass", "grunt" ],
-    timeline: "Created in 2014 and last updated in 2014"
+    description: "Observe an original, evolutionary state of Conway's Game of Life through a single-page application built in Angular",
+    techs: [ "javascript", "angularjs", "sass", "grunt" ],
+    timeline: "Created in 2014 and last updated May 2014"
   }, {
     selector: "projects_mic_mac_moe_js",
     headline: "Mic Mac Moe JS",
@@ -65,9 +54,31 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/mic-mac-moe-2",
       name: "github.com/kyleaclark/mic-mac-moe-2"
     },
-    description: "Web application of a cross between tic-tic-toe and connect four AND Refactored a new build and expanded functionality of the original version",
+    description: "Web application built in JavaScript of an expanded version of tic-tac-toe for two-player play",
     techs: [ "javascript", "jquery", "sass" ],
-    timeline: "Created in 2013 and last updated in 2014"
+    timeline: "Created in 2013 and last updated February 2014"
+  }, {
+    selector: "projects_kyle_a_clark_2",
+    headline: "kyleaclark.com",
+    subTitle: "Personal portfolio created in Angular 2",
+    github: {
+      url: "https://github.com/kyleaclark/kyleaclark-2",
+      name: "github.com/kyleaclark/kyleaclark"
+    },
+    description: "Personal portfolio single-page application created in Angular 2.0 with TypeScript and WebPack.",
+    techs: [ "javascript", "angularjs", "sass" ],
+    timeline: "Created in 2014 and last updated June 2016"
+  }, {
+    selector: "projects_kyle_a_clark",
+    headline: "kyleaclark.com (old)",
+    subTitle: "Personal portfolio created in Angular",
+    github: {
+      url: "https://github.com/kyleaclark/kyleaclark",
+      name: "github.com/kyleaclark/kyleaclark"
+    },
+    description: "Personal portfolio single-page application created in Angular and responsively designed for all device sizes.",
+    techs: [ "angularjs", "sass", "grunt" ],
+    timeline: "Created in 2014 and last updated November 2015"
   }, {
     selector: "projects_connect_four",
     headline: "Connect Four",
@@ -76,9 +87,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/connect-four",
       name: "github.com/kyleaclark/connect-four"
     },
-    description: "Desktop GUI application created using the Allegro Gaming Library",
+    description: "Desktop 2D Game developed in C++ using the Allegro Gaming Library for a two-player version of Connect Four",
     techs: [ "cplusplus" ],
-    timeline: "Created in 2005 and last updated in 2006"
+    timeline: "Created in 2005 and last updated April 2006"
   }, {
     headline: "Time Calculator v2",
     selector: "projects_time_calculator_2",
@@ -87,9 +98,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/time-calculator-2",
       name: "github.com/kyleaclark/time-calculator-2"
     },
-    description: "Desktop GUI application to calculate time",
+    description: "Desktop GUI application developed in Java to convert a whole number of minutes  into a HH:MM format",
     techs: [ "java" ],
-    timeline: "Created in 2005 and last updated in 2005"
+    timeline: "Created in 2005 and last updated May 2005"
   }, {
     selector: "projects_time_calculator_1",
     headline: "Time Calculator v1",
@@ -98,9 +109,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/time-calculator-1",
       name: "github.com/kyleaclark/time-calculator-1"
     },
-    description: "Desktop console application to calculate time",
+    description: "Desktop console application developed in C++ to convert a whole number of minutes  into a HH:MM format",
     techs: [ "cplusplus" ],
-    timeline: "Created in 2004 and last updated in 2005"
+    timeline: "Created in 2004 and last updated February 2005"
   }, {
     selector: "projects_light",
     headline: "Light",
@@ -109,9 +120,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/light",
       name: "github.com/kyleaclark/light"
     },
-    description: "Play a multi-level, time-based maze puzzle game",
+    description: "Desktop 2D Game built in C++ using the Allegro Gaming Library that includes multiple levels of a time-based maze puzzle the user must escape without prior knowledge of the game map.",
     techs: [ "cplusplus" ],
-    timeline: "Created in 2003 and last updated in 2004"
+    timeline: "Created in 2003 and last updated December 2004"
   }, {
     selector: "projects_spaced_out",
     headline: "Spaced Out",
@@ -120,9 +131,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/spaced-out",
       name: "github.com/kyleaclark/spaced-out"
     },
-    description: "Play a space shooter game with rudimentary AI AND Uses a trigonometry functions to calculate collisions and move enemy ships",
+    description: "Desktop 2D Game built in C++ using the Allegro Gaming Library -- a space shooter game with rudimentary AI which use trigonometry functions to calculate collisions and move enemy ships.",
     techs: [ "cplusplus" ],
-    timeline: "Created in 2003 and last updated in 2004"
+    timeline: "Created in 2003 and last updated in December 2004"
   }, {
     selector: "projects_dynamic_toe",
     headline: "Dynamic Toe",
@@ -131,9 +142,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/dynamic-toe",
       name: "github.com/kyleaclark/dynamic-toe"
     },
-    description: "Desktop console application to play a game of tic-tac-toe with a dynamic game board size",
+    description: "Desktop console application developed in C++ to play a game of tic-tac-toe with a dynamic game board size.",
     techs: [ "cplusplus" ],
-    timeline: "Created in 2002 and last updated in 2002"
+    timeline: "Created in 2002 and last updated May 2002"
   }, {
     selector: "projects_escape_to_safety",
     headline: "Escape to Safety",
@@ -142,9 +153,9 @@ const ProjectsData = [{
       url: "https://github.com/kyleaclark/escape-to-safety",
       name: "github.com/kyleaclark/escape-to-safety"
     },
-    description: "Play a time-based maze puzzle game AND First full-fledged program I developed as a sophomore in high school",
+    description: "Desktop console application developed in C++ to play a time-based maze puzzle game -- first full-fledged program I developed while a sophomore in high school",
     techs: [ "cplusplus" ],
-    timeline: "Created in 2002 and last updated in 2002"
+    timeline: "Created in 2002 and last updated April 2002"
   }
 ];
 
